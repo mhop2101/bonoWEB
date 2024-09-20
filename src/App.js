@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MyNavbar from './Navbar';
+import ProgressBarWithInput from './ProgressBar';
+import UserForm from './UserF.js ';
+import Componente from './Component2';
+import MyCustomTimer from './TImerComponent';
+import PasswordGenerator from './PasswordGenerator';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyNavbar tilted={false}></MyNavbar>
+      <br></br>
+      <MyNavbar tilted={true}></MyNavbar>
+      <ProgressBarWithInput></ProgressBarWithInput>
+      <Componente></Componente>
+      <MyCustomTimer></MyCustomTimer>
+      <PasswordGenerator></PasswordGenerator>
+    </>
+
   );
 }
 
